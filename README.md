@@ -77,8 +77,8 @@ Clone from https://github.com/martincyoung/SIPRig and added new features for tes
 ## Installation
 
 ```
-git clone https://github.com/renaner123/siptools.git
-cd siptools/
+git clone https://github.com/renaner123/Siptools.git
+cd Siptools/
 ```
 
 ## Examples Usages
@@ -92,7 +92,7 @@ python3 siprig.py -f examples/register.txt -S <use your IP Address here> -d <use
 - Sending a `Subscribe`
 
 ```shell
-siprig.py -f examples/subscribe.txt -S <use your IP Address here> -d <use destination IP Address here> -p 5060 -P 55220 -v -a surname -mac 123B3C1YHC12 -callid 1010 -model VOIP 
+python3 siprig.py -f examples/subscribe.txt -S <use your IP Address here> -d <use destination IP Address here> -p 5060 -P 55220 -v -a surname -mac 123B3C1YHC12 -callid 1010 -model VOIP 
 
 ```
 
