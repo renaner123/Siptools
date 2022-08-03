@@ -1,0 +1,13 @@
+CANCEL sip:456@177.53.246.159:6080 SIP/2.0
+Via: SIP/2.0/UDP 10.1.31.155;rport;branch=z9hG4bKPjQ9lRVGcUXiCsxFKvdaFPKf9I-FLjBMuR
+Max-Forwards: 70
+From: "Fake" <sip:Abestado@10.1.31.155>;tag=-J54F2l6UQ7SdNVg4D.tkgW1YZw2rJGt
+To: <sip:456@177.53.246.159>
+Contact: <sip:Abestado@192.168.0.10:5070;transport=udp>;+sip.instance="<urn:uuid:00:1A:3F:05:7F:2F>";+sip.model="Algum Modelo";+sip.version="1.0"
+Call-ID: DiDryVc2iuy699JjZXLmjzWCT-QcVj.l
+CSeq: 3482 CANCEL
+Max-Forwards: 63
+Reason: %(oi)s="Normal call clearing"
+Supported: 100rel
+Content-Length: 0
+

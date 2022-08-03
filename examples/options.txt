@@ -1,0 +1,15 @@
+OPTIONS sip:%(dest_ip)s SIP/2.0
+Via: SIP/2.0/UDP %(source_ip)s:%(source_port)s
+Max-Forwards: 70
+From: %(apelido)s <sip:%(sip_from)s@%(source_ip)s>;tag=98765
+To: <sip:%(dest_ip)s>
+Contact: <sip:%(sip_from)s@%(source_ip)s:%(source_port)s)>
+Call-ID: 1234567@%(source_ip)s
+User-Agent: %(model)s
+Allow: INVITE, ACK, CANCEL, OPTIONS, BYE, REFER, SUBSCRIBE, NOTIFY, INFO, PUBLISH
+CSeq: 1 OPTIONS
+Accept: application/sdp
+Content-Length: 0
+
+
+

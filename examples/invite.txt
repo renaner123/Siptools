@@ -1,0 +1,24 @@
+INVITE sip:%(sip_to)s@%(dest_ip)s:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP %(source_ip)s;rport;branch=z9hG4bKPjQ9lRVGcUXiCsxFKvdaFPKf9I-FLjBMuR
+Max-Forwards: 70
+From: "%(apelido)s" <sip:%(sip_from)s@%(source_ip)s>;tag=-J54F2l6UQ7SdNVg4D.tkgW1YZw2rJGt
+To: <sip:%(sip_to)s@%(dest_ip)s>
+Contact: <sip:%(sip_from)s@192.168.0.10:%(source_port)s;transport=udp>;+sip.instance="<urn:uuid:00:1A:3F:05:7F:2F>";+sip.model="%(model)s";+sip.version="1.0"
+Call-ID: DiDryVc2iuy699JjZXLmjzWCT-QcVj.l
+CSeq: 3482 INVITE
+Allow: PRACK, INVITE, ACK, BYE, CANCEL, UPDATE, REFER, OPTIONS, SUBSCRIBE, NOTIFY, REFER
+Supported: 100rel, replaces
+Privacy: none
+Allow-Events: check-sync
+Expires: 90
+User-Agent: %(apelido)s
+Content-Type: application/sdp
+Content-Length:   404
+
+v=0
+o=user1 53655765 2353687637 IN IP4 %(source_ip)s
+s=-
+t=0 0
+c=IN IP4 %(source_ip)s
+m=audio %(rtp_port)s RTP/AVP 0
+a=rtpmap:0 PCMU/8000

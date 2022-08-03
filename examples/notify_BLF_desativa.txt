@@ -1,0 +1,21 @@
+NOTIFY sip:5002@10.1.43.242:5060;transport=udp SIP/2.0
+Via: SIP/2.0/UDP 10.1.43.12:5060;branch=z9hG4bK725cccb4;rport
+From: <sip:5001@10.1.43.12>;tag=as6ab3396b
+To: "5002" <sip:5002@10.1.43.12>;tag=mm428j6E7olVCE9cYaMukagxxxVjZ2SH
+Contact: <sip:5001@10.1.43.12>
+Call-ID: KvjrNg0KZ4.2dW-J.xypS71npaLcQiMb
+CSeq: 115 NOTIFY
+User-Agent: CIP850
+Max-Forwards: 70
+Event: dialog
+Content-Type: application/dialog-info+xml
+Subscription-State: active
+Content-Length: 203
+
+<?xml version="1.0"?>
+<dialog-info xmlns="urn:ietf:params:xml:ns:dialog-info" version="6" state="full" entity="sip:5001@10.1.43.12">
+<dialog id="5001">
+<state>terminated</state>
+</dialog>
+</dialog-info>
+~
